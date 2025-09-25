@@ -1,5 +1,5 @@
 import React from "react";
-
+// receives data and unit from app.js
 export default function Weather({ data, unit }) {
   const celsiusTemp = data.main.temp;
   const displayTemp = unit === "imperial"

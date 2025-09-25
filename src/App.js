@@ -6,7 +6,7 @@ import Search from "./Search";
 import UnitToggle from "./UnitToggle";
 import { WiDaySunny } from "react-icons/wi";
 import "./App.css";
-
+// state variables
 export default function App() {
   const [weatherData, setWeatherData] = useState(null);
   const [forecastData, setForecastData] = useState(null);
@@ -15,12 +15,12 @@ export default function App() {
   const [history, setHistory] = useState([]);
 
   const API_KEY = "aab4689db9d5df063c73df2e457f3a8f"; // replace with your API key
-
+  // load city history in local storage
   useEffect(() => {
     const saved = localStorage.getItem("searchHistory");
     if (saved) setHistory(JSON.parse(saved));
   }, []);
-
+    // save city history in local storage
   useEffect(() => {
     localStorage.setItem("searchHistory", JSON.stringify(history));
   }, [history]);
@@ -45,7 +45,7 @@ export default function App() {
     }
     setLoading(false);
   };
-
+// UI
   return (
     <div className="app-wrapper">
       <div className="app rgb-glow">

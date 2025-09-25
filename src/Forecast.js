@@ -1,8 +1,8 @@
 import React from "react";
-
+// receives data and unit 
 export default function Forecast({ data, unit }) {
   const daily = data.list.filter(item => item.dt_txt.includes("12:00:00"));
-
+// groups data by day or shows
   return (
     <div className="forecast">
       <h3>5-Day Forecast</h3>
