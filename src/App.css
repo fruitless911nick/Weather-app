@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Weather';
-  src: url('C:\\Users\\satya\\Desktop\\React Js Project\\weatherapp\\Manufacturing_Consent,Nunito,Smooch_Sans\\Smooch_Sans\\Weather.ttf') format('truetype');
+  src: url('../Manufacturing_Consent,Nunito,Smooch_Sans/Smooch_Sans/Weather.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
